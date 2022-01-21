@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:background="@drawable/bordas"
+    android:paddingVertical="12dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="2dp"
+    android:paddingRight="16dp"
+    android:layout_marginVertical="2dp">
+
+    <TextView
+        android:id="@+id/tv_subservicoNum"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_subservicoTexto"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/tv_subservicoNum"
+        android:layout_toRightOf="@+id/tv_subservicoNum"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/bt_foto_subservico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="00dp"
+        android:layout_marginRight="00dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_local_see_24" />
+
+    <ImageView
+        android:id="@+id/bt_Obs_subservico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toStartOf="@+id/bt_foto_subservico"
+        android:layout_toLeftOf="@+id/bt_foto_subservico"
+        android:src="@drawable/ic_baseline_create_24" />
+
+    <ProgressBar
+        android:id="@+id/pb_subservico"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="120dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_subservicoUnidade"
+        android:layout_alignStart="@+id/tv_subservicoQtd"
+        android:layout_alignLeft="@+id/tv_subservicoQtd"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/tv_subservicopercent"
+        android:layout_toLeftOf="@+id/tv_subservicopercent"
+        android:progress="25" />
+
+    <TextView
+        android:id="@+id/tv_subservicoQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_subservicoNum"
+        android:layout_alignStart="@+id/tv_subservicoNum"
+        android:layout_alignLeft="@+id/tv_subservicoNum"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="58dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_subservicoUnidade"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_subservicoNum"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_toEndOf="@+id/tv_subservicoQtd"
+        android:layout_toRightOf="@+id/tv_subservicoQtd"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_subservicopercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="-4dp"
+        android:text="TextView" />
+
+</RelativeLayout>

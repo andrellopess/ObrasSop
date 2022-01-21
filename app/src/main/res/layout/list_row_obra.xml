@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:background="@drawable/bordas"
+    android:paddingVertical="12dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="0dp"
+    android:paddingRight="16dp"
+    android:layout_marginVertical="4dp">
+
+    <TextView
+        android:id="@+id/tv_obraContrato"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-2dp"
+        android:textStyle="bold"
+        android:text="Contrato" />
+
+
+    <TextView
+        android:id="@+id/tv_obraTexto"
+        android:layout_width="220dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="Objeto da Obra" />
+
+    <TextView
+        android:id="@+id/tv_texto1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_obraTexto"
+        android:layout_alignStart="@+id/tv_obraTexto"
+        android:layout_alignLeft="@+id/tv_obraTexto"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="00dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Valor: " />
+
+    <TextView
+        android:id="@+id/tv_texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_texto1"
+        android:layout_alignStart="@+id/tv_obraTexto"
+        android:layout_alignLeft="@+id/tv_obraTexto"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Saldo: " />
+
+    <TextView
+        android:id="@+id/tv_obraValor"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_obraTexto"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/tv_texto1"
+        android:layout_toRightOf="@+id/tv_texto1"
+        android:text="000000,00" />
+
+    <TextView
+        android:id="@+id/tv_obraSaldo"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_obraValor"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/tv_texto1"
+        android:layout_toRightOf="@+id/tv_texto1"
+        android:text="000000,00" />
+
+    <ImageView
+        android:id="@+id/bt_deleteObra"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="00dp"
+        android:layout_marginRight="00dp"
+        android:layout_marginBottom="13dp"
+        android:src="@drawable/ic_baseline_delete_24" />
+
+    <ImageView
+        android:id="@+id/bt_exportaCSV"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/bt_deleteObra"
+        android:layout_toLeftOf="@+id/bt_deleteObra"
+        android:src="@drawable/ic_baseline_laptop_windows_24" />
+
+    <ImageView
+        android:id="@+id/bt_abreBloco"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/bt_contato"
+        android:layout_toLeftOf="@+id/bt_contato"
+        android:src="@drawable/ic_baseline_assignment_24" />
+
+    <ImageView
+        android:id="@+id/bt_contato"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="13dp"
+        android:layout_toStartOf="@+id/bt_exportaCSV"
+        android:layout_toLeftOf="@+id/bt_exportaCSV"
+        android:src="@drawable/ic_baseline_phone_enabled_24" />
+
+    <ProgressBar
+        android:id="@+id/determinateBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/tv_obraporcentagem"
+        android:layout_toLeftOf="@+id/tv_obraporcentagem"
+        android:progress="25" />
+
+    <TextView
+        android:id="@+id/tv_obraporcentagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="-4dp"
+        android:text="TextView" />
+
+</RelativeLayout>

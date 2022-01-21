@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:background="@drawable/bordas"
+    android:paddingVertical="12dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="2dp"
+    android:paddingRight="16dp"
+    android:layout_marginVertical="2dp">
+
+    <TextView
+        android:id="@+id/tv_servicoNum"
+        android:layout_width="50dp"
+        android:layout_height="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="0dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_servicoTexto"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/tv_servicoNum"
+        android:layout_toRightOf="@+id/tv_servicoNum"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/bt_foto_servico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="00dp"
+        android:layout_marginRight="00dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_baseline_local_see_24" />
+
+    <ImageView
+        android:id="@+id/bt_Obs_servico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toStartOf="@+id/bt_foto_servico"
+        android:layout_toLeftOf="@+id/bt_foto_servico"
+        android:src="@drawable/ic_baseline_create_24" />
+
+    <ImageView
+        android:id="@+id/bt_Listar_Subservico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toStartOf="@+id/bt_Obs_servico"
+        android:layout_toLeftOf="@+id/bt_Obs_servico"
+        android:src="@drawable/ic_baseline_assignment_24" />
+
+    <ProgressBar
+        android:id="@+id/pb_servico"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="120dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_servicoUnidade"
+        android:layout_alignStart="@+id/tv_servicoQtd"
+        android:layout_alignLeft="@+id/tv_servicoQtd"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/tv_servicopercent"
+        android:layout_toLeftOf="@+id/tv_servicopercent"
+        android:progress="25" />
+
+    <TextView
+        android:id="@+id/tv_servicoQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_servicoNum"
+        android:layout_alignStart="@+id/tv_servicoNum"
+        android:layout_alignLeft="@+id/tv_servicoNum"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="58dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_servicoUnidade"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tv_servicoNum"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="58dp"
+        android:layout_toEndOf="@+id/tv_servicoQtd"
+        android:layout_toRightOf="@+id/tv_servicoQtd"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/tv_servicopercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="-4dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.obassop">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_sop_foreground"
+        android:label="ObrasSop"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_sop_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ObasSOP">
+        <activity android:name=".Activities.FotoActivity"></activity>
+        <activity
+            android:name=".Activities.SubservicosActivity"
+            android:label="SUBSERVIÇOS" />
+        <activity
+            android:name=".Activities.ServicosActivity"
+            android:label="SERVIÇOS" />
+        <activity
+            android:name=".Activities.BlocosActivity"
+            android:label="BLOCOS" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/providers_path" />
+        </provider>
+    </application>
+
+</manifest>
